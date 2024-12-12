@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vancouver Consulting Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00509E;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .language-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Vancouver Consulting Academy
+        <div class="language-toggle">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('fr')">Français</button>
+        </div>
+    </header>
+    <nav>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="career.html">Career</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+    <section>
+        <h1>Welcome to Vancouver Consulting Academy</h1>
+        <p>We provide high-quality consulting, training, and certification services tailored to meet the specific needs of individuals and organizations.</p>
+    </section>
+    <footer>
+        &copy; 2024 Vancouver Consulting Academy. All rights reserved.
+    </footer>
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'fr') {
+                window.location.href = 'index_fr.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>
